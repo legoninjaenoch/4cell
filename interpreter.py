@@ -1,5 +1,4 @@
 from random import randint
-print("Enter the code to be run: ")
 x = input()
 a,b,c,d = 0,0,0,0
 def interpret(str,a,b,c,d):
@@ -63,10 +62,10 @@ def interpret(str,a,b,c,d):
                 d = temp
             i+=4
         elif str[i] == '.':
-            print(eval(str[i+1]))
+            print(eval(str[i+1]),end="")
             i+=2
         elif str[i] == ',':
-            print(chr(eval(str[i+1])))
+            print(chr(eval(str[i+1])),end="")
             i+=2
         elif str[i] == '?':
             if str[i+1] == 'a':
@@ -101,6 +100,7 @@ def interpret(str,a,b,c,d):
             i+=1
     return a,b,c,d
 a,b,c,d = interpret(x,a,b,c,d)
-#print("final values")  these can be commented back in if you want to see the final state of all the cells
+#print()  comment these back in if you want to see final state of all cells
+#print("final values")
 #print("a:",a,"b:",b,"c:",c,"d:",d)
-input(); #stops the program from closing right after on windows
+input();
