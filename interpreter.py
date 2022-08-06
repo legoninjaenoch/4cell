@@ -1,4 +1,5 @@
 from random import randint
+print("Enter the code to be run: ")
 x = input()
 a,b,c,d = 0,0,0,0
 def interpret(str,a,b,c,d):
